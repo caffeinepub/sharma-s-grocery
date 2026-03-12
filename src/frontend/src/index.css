@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Fraunces";
+  src: url("/assets/fonts/Fraunces.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Green & White Fresh Grocery Theme */
+    --background: 0.98 0.005 145;
+    --foreground: 0.15 0.025 145;
+
+    --card: 1 0 0;
+    --card-foreground: 0.15 0.025 145;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0.025 145;
+
+    --primary: 0.48 0.165 145;
+    --primary-foreground: 0.99 0.005 145;
+
+    --secondary: 0.93 0.04 145;
+    --secondary-foreground: 0.35 0.1 145;
+
+    --muted: 0.94 0.02 145;
+    --muted-foreground: 0.5 0.05 145;
+
+    --accent: 0.6 0.16 145;
+    --accent-foreground: 0.99 0.005 145;
+
+    --destructive: 0.55 0.22 27;
+    --destructive-foreground: 0.99 0.005 27;
+
+    --success: 0.55 0.18 145;
+    --success-foreground: 0.99 0 0;
+
+    --border: 0.88 0.03 145;
+    --input: 0.88 0.03 145;
+    --ring: 0.48 0.165 145;
+
+    --radius: 0.75rem;
+
+    /* Custom */
+    --green-50: 0.97 0.025 145;
+    --green-100: 0.93 0.05 145;
+    --green-200: 0.86 0.09 145;
+    --green-500: 0.55 0.175 145;
+    --green-600: 0.48 0.165 145;
+    --green-700: 0.4 0.14 145;
+    --green-800: 0.3 0.1 145;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Figtree", sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Fraunces", serif;
+  }
+}
